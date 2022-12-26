@@ -1,0 +1,550 @@
+/*style for full site*/
+html,body{
+    padding: 0;
+    margin: 0;
+    background: #f5f5cf;
+}
+h1,h2,h3,h4,h5,p{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+.dark{
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 0.2em;
+}
+header,footer,main{
+    position: relative;
+    float: left;
+    width: 100%;
+    display: flex;
+}
+/*style for header*/
+header{
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: rgb(253, 253, 255);
+}
+header img{
+    width: 10em;
+    margin-left: 1.5em;
+}
+.title{
+    margin-top: 1.3em;
+    font-size: 1.57em;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
+.title h1{
+    position: relative;
+    float: left;
+    margin-left: 0.2em;
+}
+.title h1:nth-child(1){
+    color: rgb(108, 41, 0);
+}
+.nav_header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 2.5em;
+    margin-top: 1.5em;
+    background: #a3c75c;
+    border-radius: 5px 5px 0 0;
+}
+.nav_header a{
+    color: rgb(253, 249, 249);
+    text-align: center;
+    width: 12em;
+    border-radius: 0 0 4px 4px;
+}
+.nav_header a:hover{
+    background: rgb(40, 163, 228);
+}
+
+.nav_header h3{
+    margin-top: 0.5em;
+}
+
+.sign_reg{
+    display: flex;
+    flex-direction: row;
+    width: 12em;
+    margin-left: 33em;
+    margin-top: 2em;
+}
+.sign_reg a{
+    color: rgb(9, 9, 9);
+    background: white;
+    text-align: center;
+    height: 2.5em;
+    
+}
+.sign_reg h3{
+    margin-top: 0.5em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+.sign_reg a:nth-child(1):hover{
+    color: white;
+    background: rgb(40, 163, 228);
+}
+.sign_reg a:nth-child(3):hover{
+    color: white;
+    background: rgb(40, 163, 228);
+}
+
+.blue{
+    position: relative;
+    height: 2px;
+    background: rgb(251, 41, 66);
+}
+body>.dark{
+    background-color: rgb(71, 71, 71);
+    height: 0.3em;
+}
+.sign_user{
+    display: flex;
+    flex-direction: row;
+    width: 12em;
+    margin-left: 33em;
+    margin-top: 2em;
+}
+.sign_user a{
+    color: rgb(9, 9, 9);
+    background: white;
+    text-align: center;
+    height: 2.5em;
+}
+.sign_user h3{
+    margin-top: 0.5em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+.sign_user a:nth-child(1):hover{
+    color: white;
+    background: rgb(40, 163, 228);
+
+}
+.sign_user a:nth-child(3):hover{
+    color: white;
+    background: rgb(40, 163, 228);
+
+}
+
+#sign_1{
+    display: none;
+}
+/*style for main*/
+main{
+    flex-direction: column;
+}
+main img{
+    width: 100%;
+    height: 25em;
+}
+.service{
+    margin-top: 1em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 1em;
+}
+.info{
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 1.17em;
+}
+.info div{
+    margin-bottom: 1em;
+}
+.info p{
+    color: #333131;
+}
+strong p{
+    font-size: 1.19em;
+}
+.titleMain{
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    margin-left: 10%;
+    font-size: 1.27em;
+    color: #333131;
+}
+.panorame{
+    margin-top: 1em;
+    margin-left: 8em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 1em;
+}
+.panorame div{
+    margin: 0.5em;
+    width: 23%;
+    height: 70%;
+}
+.p_image{
+    overflow: hidden;
+}
+
+.secondelig{
+    transition: 1s;
+    display: block;
+}
+.secondelig:hover{
+    transform:  scale(1.2);
+}
+main .dark{
+    background-color: rgb(71, 71, 71);
+    margin-top: -0.5em;
+    height: 0.3em;
+}
+
+/*style for footer*/
+footer{
+    background: rgb(255, 255, 255);
+    height: 12em;
+}
+.content_footer{
+    position: relative;
+    float: left;
+    width: 60%;
+    margin-left: 30%;
+    margin-right: 20%;
+    margin-top: 2em;
+    display: flex;
+    flex-direction: row;
+}
+footer img{
+    width: 8em;
+}
+.description_footer{
+    display: flex;
+    flex-direction: row;
+    color: rgb(43, 40, 35);
+}
+.description_footer div{
+    display: flex;
+    flex-direction: column;
+    margin-right: 2em;
+}
+.description_footer div:nth-child(1){
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 5em;
+    width: 20em;
+}
+.description_footer div>a{
+    margin-left: 0.5em;
+}
+.description_footer div>a{
+    margin-bottom: 0.5em;
+}
+.description_footer a{
+    color: rgb(43, 40, 35);
+}
+.description_footer div>h3{
+    margin-bottom: 0.5em;
+}
+.description_footer div>a:hover{
+    color: #a3c75c;
+}
+
+/*style for reg layout*/
+.reg_form{
+    margin-left: 35%;
+    margin-right: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid rgb(43, 40, 35);
+    margin-top: 0.5em;
+    height: 32em;
+    background: white;
+    margin-bottom: 5em;
+}
+.reg_form div:nth-child(1){
+    width: 100%;
+    background: #a3c75c;
+}
+
+.reg_form h1{
+    color: white;
+    margin-top: 1em;
+    margin-left: 4em;
+    margin-bottom: 1em;
+}
+.reg_form h3{
+    width: 90%;
+    margin-top: 0.5em;
+    margin-left: 2em;
+    margin-bottom: 1em;
+    color: rgb(43, 40, 35);
+}
+.reg_form p{
+    color: rgb(43, 40, 35);
+    font-size: 1.54em;
+    margin-bottom: 0.3em;
+}
+.reg{
+    height: 54em;
+}
+.autor h1{
+    margin-left: 6em;
+}
+.reg_form form{
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+}
+.reg_form form>input{
+    margin-bottom: 1em;
+    width: 20em;
+    font-size: 1.44em;
+    border-radius: 4px;
+    border: 3px solid rgb(43, 40, 35);
+    color: rgb(43, 40, 35);
+}
+.reg_form form>input:last-child:hover{
+    background: #a3c75c;
+    color: white;
+    border: 3px solid #a3c75c;
+}
+#messageError{
+    background: rgb(221, 45, 45);
+    color: white;
+    width: 30em;
+    border-radius: 4px;
+}
+#messageError p{
+    color: white;
+}
+
+.closeError{
+    background: none;
+    border: none;
+    position: relative;
+    float: right;
+    color: white;
+}
+#messageError h3,p{
+    margin-left: 0.5em;
+    color: white;
+}
+.reg_form form>select{
+    font-size: 1.44em;
+    margin-bottom: 1em;
+}
+.reg_form form>textarea{
+    resize: none;
+    font-size: 1.44em;
+    margin-bottom: 1em;
+    border-radius: 4px;
+}
+.titleReg h1{
+    margin-left: 6em;
+}
+.Ring_phone{
+    display: flex;
+    flex-direction: row;
+    height: 5em;
+    background: #a3c75c;
+}
+.Ring_phone h2{
+    color: white;
+    margin-top: 0.8em;
+    margin-left: 20em;
+}
+.Ring_phone form{
+    margin-top: 1em;
+    margin-left: 3em;
+}
+.Ring_phone form>input:nth-child(2){
+    background: rgb(40, 163, 228);
+    border-color: rgb(40, 163, 228);
+    color: white;
+}
+.autoriz{
+    margin-left: 33%;
+    margin-right: 33%;
+    height: 20em;
+}
+.autoriz h1{
+    margin-left: 8em;
+}
+.autoriz form{
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 2em;
+}
+.autoriz form>input:nth-child(3){
+    width: 5em;
+    height: 1.5em;
+    margin-top: -1.5em;
+    margin-left: 0.5em;
+}
+/*style for success*/
+.message{
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
+}
+.message h1,input{
+    font-size: 1.55em;
+}
+/*style for bot*/
+.bot{
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    height: 40em;
+    width: 60em;
+    margin-left: 28em;
+    margin-right: 28em;
+    border: 2px solid rgb(40, 163, 228);
+    border-radius: 1em;
+    background-color: rgba(40, 163, 228, .6);
+}
+.image_bot img{
+    width: auto;
+    height: 12em;
+}
+.chat_bot{
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    height: 24.7em;
+    overflow: auto;
+}
+.message_bot{
+    border: 2px solid rgb(40, 163, 228);
+    background-color: rgb(40, 163, 228);
+    border-radius: 0.5em;
+    font-size: 1.26rem;
+    width: 25em;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+.message_bot:first-child{
+    margin-bottom: 2em;
+}
+.message_user{
+    border: 2px solid rgb(74, 192, 137);
+    background-color: rgb(74, 192, 137);
+    border-radius: 0.5em;
+    font-size: 1.26rem;
+    width: 16.5em;
+    margin-left: 29em;
+    margin-bottom: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+/*  .message_bot:before {
+    content: ' '; 
+	position: absolute; 
+	width: 0; 
+	height: 0; 
+	left: 26em; 
+	bottom: 3.45em; 
+	border: 15px solid; 
+	border-color: rgb(40, 163, 228) transparent transparent rgb(40, 163, 228); 
+  }*/
+.input_message{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 47.5px;
+    width: 100%;
+    border: 1px solid rgb(40, 163, 228);
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+}
+.input_message input:nth-child(1){
+    width: 89%;
+    border: none;
+    border-bottom-left-radius: 0.5em;
+    padding: 0;
+    margin: 0;
+    font-size: 1.26rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    outline: none;
+}
+.input_message input:nth-child(2){
+    width: 7.5%;
+    padding: 0;
+    margin: 0;
+    border: none;
+    border-right: 3px solid rgb(40, 163, 228);
+    background: url(../image/reset.png) no-repeat;
+    background-size: cover;
+    
+}  
+.input_message input:nth-child(3){
+    width: 10%;
+    padding: 0;
+    margin: 0;
+    border: none;
+    border-bottom-right-radius: 0.5em;
+    border-left: 2px solid rgb(40, 163, 228);
+    background-size: cover;
+    background: url(../image/ebutton.png) no-repeat;
+    background-color: white;
+}  
+.input_message input:nth-child(2):hover{
+    background-color: rgb(145, 145, 145);
+    border: 1px solid rgb(145, 145, 145);
+}
+.input_message input:nth-child(3):hover{
+    background-color: white;
+    border: 1px solid rgb(145, 145, 145);
+}
+/*Панель админа*/
+main .darkA{
+    margin-top: 0;
+}
+main .signA{
+    margin-top: 10em;
+    margin-bottom: 10em;
+}
+main .table_admin{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-bottom: 5em;
+}
+main .row_table{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 70em;
+    margin-left: 25em;
+}
+.row_table div{
+    width: 25%;
+    background-color: white;
+    border: 2px solid rgb(71, 71, 71);
+}
+.row_table div>h3{
+
+    text-align: center;
+}
+.row_table div>a{
+    text-align: center;
+    color: rgb(221, 45, 45);
+}
+.row_table div>h3:nth-last-child(){
+    text-align: center;
+    color: rgb(74, 192, 137);
+}
+.message h1{
+    text-align: center;
+    color: rgb(74, 192, 137);
+}
